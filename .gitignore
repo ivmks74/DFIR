@@ -1,0 +1,6 @@
+# Never commit datasets or derived log exports
+*.csv
+*.json
+*.evtx
+*.pkl
+*.zip
