@@ -1,6 +1,6 @@
 # Phase 1: Initial access
 
-**Data used:** `STEP1_process_creation_Sysmon1.csv` (Sysmon EventID 1, process creation)
+**Data used:** Sysmon EventID 1 (process creation), 447 rows
 
 **Scenario:** A SOC alert points to suspicious activity on a user workstation. Four hosts' logs cover a 33-minute window. Reconstruct what happened.
 
@@ -8,7 +8,7 @@
 
 **Answer: host `SCRANTON`, user `DMEVALS\pbeesly`.**
 
-I filtered `STEP1` by host and sorted by time. The earliest suspicious process in the whole dataset is on SCRANTON, run by `pbeesly`. SCRANTON also has by far the most process-creation events (359 of 447), which supports it as the main host, but the conclusion rests on *what ran and when*, not on row counts.
+I filtered the process-creation rows by host and sorted by time. The earliest suspicious process in the whole dataset is on SCRANTON, run by `pbeesly`. SCRANTON also has by far the most process-creation events (359 of 447), which supports it as the main host, but the conclusion rests on *what ran and when*, not on row counts.
 
 ## Q2. What is the first suspicious file that was executed, and what makes its name suspicious?
 

@@ -24,10 +24,11 @@ The data, tools and references I use to build my own lab and work through this c
 |---|---|---|
 | [Timeline Explorer and EvtxECmd](https://ericzimmerman.github.io/) (Eric Zimmerman) | Filtering and parsing event logs | Used |
 | [EvtxECmd maps](https://github.com/EricZimmerman/evtx) | Normalise `.evtx` payloads into columns | Next (raw `.evtx` phase) |
-| Python and pandas | Format conversion, process trees, helper scripts | Used (`scripts/`) |
 | [CyberChef](https://gchq.github.io/CyberChef/) | Base64, gunzip and other decoding | Used |
 | [SigmaHQ rules](https://github.com/SigmaHQ/sigma) | Detection logic written as rules | Next |
-| [Hayabusa](https://github.com/Yamato-Security/hayabusa) and [Chainsaw](https://github.com/WithSecureLabs/chainsaw) | Run Sigma rules over `.evtx` quickly. I plan to use them as a checker after my own manual work | Next |
+| [Hayabusa](https://github.com/Yamato-Security/hayabusa) (Yamato Security) | Runs Sigma and its own rules over event logs to build a detection timeline. Used as a checker after my manual work | Used |
+| [Takajo](https://github.com/Yamato-Security/takajo) | Analyzer for Hayabusa results (suspicious-process timelines, ATT&CK summaries) | Next |
+| [Chainsaw](https://github.com/WithSecureLabs/chainsaw) | Another fast Sigma-based hunting tool for `.evtx` | Next |
 | [Timesketch](https://timesketch.org/) | Collaborative timeline analysis | Later |
 
 ## Reference documentation
